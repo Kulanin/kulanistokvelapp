@@ -375,16 +375,12 @@ class App extends React.Component {
   //-----------------------------------------------------------------------
   async FetchDataFromTheBackEnd() {
 
-    let url = "";
+    let  url =  "http://127.0.0.1:5001";
 
-    if (process.env.NODE_ENV === 'production') {
 
-      url = "http://127.0.0.1:" +  process.env.PORT ;
-    }else{
+      
 
-       url =  "http://127.0.0.1:" + 5001;// || 5001; 
-
-    }
+  
 
    
 
